@@ -1,36 +1,30 @@
 package classobject;
 
-class Student {
-	public int sid;   //attributes
-	public String sname;
-	public int age;
-	public String branch;
-	public int fee;
-	public void writeExam()    // methods
-	{
-		System.out.println("writing exam");
-	}
-}
+
 
 public class StudentMain {
-
 	public static void main(String[] args) {
 		Student s1=new Student();
-		s1.sid =1;
-		s1.sname = "Vijay";
-		s1.branch = "ECE";
-		s1.age = 22;
-		s1.fee = 100000;
+		s1.setSid(1);
+		s1.setSname("Vijay");
+		s1.setBranch("ECE");
+		s1.setAge(22);
+		s1.setFee(10000);
 		Student s2=new Student();
-		s2.sid =2;
-		s2.sname = "rahul";
-		s2.branch = "CSE";
-		s2.age = 22;
-		s2.fee = 100000;
+		s2.setSid(2);
+		s2.setSname("rahul");
+		s2.setBranch("CSE");
+		s2.setAge(22);
+		s2.setFee(10000);
+		Student s3=new Student();
+		System.out.println(s2.getSname());
 		
-		System.out.println(s2.sname);
-		System.out.println(s1.sname);
-		
+		System.out.println(s2.getSname());
+		System.out.println(s1.getSname());
+		System.out.println(s1.getSid());
+		s1.writeExam();
+
+
 		Box b1=new Box();
 		b1.length = 10;
 		b1.height = 10;
